@@ -1,0 +1,12 @@
+# for more details see the sfeedrc(5) and sfeed_update(1) man pages
+# and the README file.
+
+#sfeedpath="$HOME/.sfeed/feeds"
+
+# list of feeds to fetch:
+feeds() {
+	# feed <name> <feedurl> [basesiteurl] [encoding]
+    feed "Slashdot" "https://rss.slashdot.org/Slashdot/slashdotMain"
+    feed "Sophie's Floorboard" "https://sophiesfloorboard.blogspot.com/feeds/posts/default?alt=rss"
+    feed "The Metal Tempest" "https://www.youtube.com/feeds/videos.xml?channel_id=UCfRZUTOJL1qAbDorCjlhGYQ"
+}
