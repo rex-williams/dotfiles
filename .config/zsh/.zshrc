@@ -15,7 +15,7 @@ bindkey -M vicmd '^[[P' vi-delete-char
 bindkey -M vicmd '^e' edit-command-line
 bindkey -M visual '^[[P' vi-delete
 zstyle ':completion:*' menu select
-unsetopt prompt_sp
+#unsetopt prompt_sp
 bindkey -s "^f" '^ucd "$(find . -type d | fzf -i)"\n'
 autoload -U compinit
 zstyle ':completion:*' menu select

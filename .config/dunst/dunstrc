@@ -3,7 +3,7 @@
     follow = keyboard
     width = 600
     height = 500
-    offset = 5x28
+    offset = 5x25
     padding = 2
     horizontal_padding = 2
     transparency = 0
@@ -14,19 +14,19 @@
     text_icon_padding = 10
 
 [urgency_low]
-    foreground = "#ffffff"
+    foreground = "#ebdbb2"
     background = "#000000"
-    frame_color = "#ffffff"
+    frame_color = "#ebdbb2"
     timeout = 3
 
 [urgency_normal]
-    foreground = "#ffffff"
+    foreground = "#ebdbb2"
     background = "#000000"
-    frame_color = "#ffffff"
+    frame_color = "#ebdbb2"
     timeout = 5
 
 [urgency_critical]
     foreground = "#ffffff"
     background = "#000000"
-    frame_color = "#ff0000"
+    frame_color = "#cc241d"
     timeout = 10
