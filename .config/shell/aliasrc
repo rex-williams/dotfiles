@@ -22,7 +22,7 @@ alias \
     ka="killall" \
     kb="cd ~/.local/src/qmk_firmware/keyboards/keychron/v1/ansi_encoder && qmk compile -kb keychron/v1/ansi_encoder -km custom && qmk flash -kb keychron/v1/ansi_encoder -km custom" \
     lf="lfub" \
-    ls="ls -hN --color=auto --group-directories-first" \
+    ls="ls -h --color=auto --group-directories-first" \
     magit="nvim -c MagitOnly" \
     mbsync="mbsync -c $MBSYNCRC" \
     mi="doas make clean install" \
