@@ -14,6 +14,7 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_RUNTIME_DIR="$XDG_CACHE_HOME/xdg-runtime"
+mkdir -p "$XDG_RUNTIME_DIR"
 export XINITRC="$XDG_CONFIG_HOME/x11/xinitrc"
 export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
 export NOTMUCH_CONFIG="$XDG_CONFIG_HOME/notmuch-config"
@@ -40,6 +41,7 @@ export SQLITE_HISTORY="$XDG_DATA_HOME/sqlite_history"
 export MUSICDIR="$HOME/audio/music"
 
 # Other program settings:
+export KISS_PATH="$HOME/.local/share/repos/personal:$KISS_PATH"
 export DICS="/usr/share/stardict/dic/"
 export SUDO_ASKPASS="$HOME/.local/bin/dmenupass"
 export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
@@ -57,5 +59,5 @@ export MOZ_USE_XINPUT2=1
 export AWT_TOOLKIT="MToolkit wmname LG3D"
 export _JAVA_AWT_WM_NONREPARENTING=1
 
-#[ "$(tty)" = "/dev/tty1" ] && ! pidof -s Xorg >/dev/null 2>&1 && exec startx "$XINITRC"
+[ "$(tty)" = "/dev/tty1" ] && ! pidof -s Xorg >/dev/null 2>&1 && exec startx "$XINITRC"
 #[ "$(tty)" = "/dev/tty1" ] && ! pidof -s Hyprland >/dev/null 2>&1 && exec Hyprland
