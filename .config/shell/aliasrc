@@ -57,7 +57,7 @@ if command -v xbps-install >/dev/null; then
     command -v xi >/dev/null || alias xi="sudo xbps-install -S"
 fi
 [ -x "$(command -v apt)" ] && alias apt="sudo apt"
-[ -x "$(command -v apk)" ] && alias apt="sudo apk"
+[ -x "$(command -v apk)" ] && alias apk="sudo apk"
 [ -x "$(command -v exa)" ] && alias ls="exa --group-directories-first"
 [ -x "$(command -v bat)" ] && alias cat="bat" >/dev/null 2>&1
 [ -x "$(command -v emerge)" ] && alias emerge="sudo emerge" e="emerge" ep="emerge -j$(nproc)" >/dev/null 2>&1
