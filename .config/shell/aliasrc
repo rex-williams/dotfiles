@@ -57,6 +57,7 @@ if command -v xbps-install >/dev/null; then
     command -v xi >/dev/null || alias xi="sudo xbps-install -S"
 fi
 [ -x "$(command -v apt)" ] && alias apt="sudo apt"
+[ -x "$(command -v exa)" ] && alias ls="exa --group-directories-first"
 [ -x "$(command -v bat)" ] && alias cat="bat" >/dev/null 2>&1
 [ -x "$(command -v emerge)" ] && alias emerge="sudo emerge" e="emerge" ep="emerge -j$(nproc)" >/dev/null 2>&1
 [ -x "$(command -v eza)" ] && alias ls="eza -h --group-directories-first --color=auto --sort=type" >/dev/null 2>&1
@@ -65,5 +66,4 @@ fi
 [ -x "$(command -v pacman)" ] && alias pacman="sudo pacman" p="pacman" >/dev/null 2>&1
 [ -x "$(command -v powerpill)" ] && alias powerpill="sudo powerpill" >/dev/null 2>&1
 [ -x "$(command -v rg)" ] && alias grep="rg" >/dev/null 2>&1
-[ -x "$(command -v zoxide)" ] && alias cd="z" cdi="zi" >/dev/null 2>&1
 if [ -x "$(command -v doas)" ]; then alias sudo="doas"; else alias doas="sudo"; fi >/dev/null 2>&1
